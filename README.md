@@ -1,6 +1,7 @@
 # PercolationFractalsStudy
 
-Main computations for my dissertaion on random fractals.
+Main computations for my dissertation on random fractals (the dissertation paper can be found [here](https://github.com/pauldubois98/DissertationPaper_RandomFractals/blob/master/main.pdf): [https://github.com/pauldubois98/DissertationPaper_RandomFractals/blob/master/main.pdf](https://github.com/pauldubois98/DissertationPaper_RandomFractals/blob/master/main.pdf)).
 
-Algorithms demos acn be found [here](https://github.com/pauldubois98/PercolationFractalsAlgorithmsDemo) (see [https://github.com/pauldubois98/PercolationFractalsAlgorithmsDemo](https://github.com/pauldubois98/PercolationFractalsAlgorithmsDemo)).
+Algorithms demos can be found [here](https://github.com/pauldubois98/PercolationFractalsAlgorithmsDemo) (see [https://github.com/pauldubois98/PercolationFractalsAlgorithmsDemo](https://github.com/pauldubois98/PercolationFractalsAlgorithmsDemo)).
+
 
