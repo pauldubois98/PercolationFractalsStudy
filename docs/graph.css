@@ -1,0 +1,92 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+}
+.oneline{
+    display: flex;
+    margin: 0.5em;
+}
+h1{
+    text-decoration: none;
+    text-align: center;
+    color: red;
+    font-size: xx-large;
+    margin: 0.25em;
+}
+h2{
+    text-decoration: none;
+    text-align: center;
+    color: orange;
+    font-size: xx-large;
+    margin: 0.25em;
+}
+h3{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: xx-large;
+    margin: 0.25em;
+}
+h4{
+    margin-top: 1em;
+    text-align: center;
+    color: slateblue;
+    margin: 0.1em;
+}
+ul{
+    margin-left: 0%;
+    list-style-type: none;
+}
+li{
+    font-size: larger;
+    color: lightblue;
+    color: black;
+    color: cornflowerblue;
+    color: dodgerblue;
+    text-decoration: none;
+    cursor: pointer;
+}
+nav{
+    padding: 0.5em;
+    margin: 1em;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: stretch;
+    width: 30em;
+    padding: 0;
+    margin: 0;
+}
+ul li:nth-child(n+1){
+    flex: 1;
+}
+nav ul:nth-child(n+2){
+    border-top: black solid 1px;
+}
+ul li:nth-child(n+2){
+    border-left: black solid 1px;
+}
+ul li{
+    text-align: center;
+    margin: 0;
+    padding: 0.75em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    /*border: black solid 1px;*/
+}
+.active{
+    color: red;
+    color: rebeccapurple;
+    color: blueviolet;
+}
+
+#graph{
+    margin: auto;
+    padding: 0.5em;
+    max-width: 70%;
+    max-height: 70%;
+}

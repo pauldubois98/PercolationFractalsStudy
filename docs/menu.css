@@ -1,0 +1,45 @@
+h1{
+    color: red;
+    text-align: center;
+    font-size: xx-large;
+}
+h2{
+    text-decoration: none;
+    text-align: center;
+    color: orange;
+    font-size: xx-large;
+}
+h3{
+    margin-top: 1em;
+    text-align: center;
+    color: slateblue;
+}
+ul{
+    margin-left: 0%;
+    list-style-type: none;
+}
+@media screen and (min-width: 600px) {
+    ul{
+        margin-left: 10%;
+    }
+}
+@media screen and (min-width: 992px) {
+    ul{
+        margin-left: 30%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    ul{
+        margin-left: 40%;
+    }
+}
+
+li, a{
+    font-size: larger;
+    color: rebeccapurple;
+    text-decoration: none;
+}
+a:hover{
+    padding-left: 1em;
+    color: blueviolet;
+}

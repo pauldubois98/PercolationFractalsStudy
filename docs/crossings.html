@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Crossings</title>
+    <meta name="description" content="Crossings Simulations Results">
+    <meta name="author" content="Paul Dubois">
+    <link rel="stylesheet" type="text/css" href="graph.css">
+</head>
+
+<body>
+    <div class="oneline">
+        <h1>Percolation Fractals</h1>
+        <h3> - </h3>
+        <h2>Crossings</h2>
+    </div>
+
+    <nav>
+        <ul id="crossingType">
+            <li onClick="activate(this)" class="active" id="straight">Straight</li>
+            <li onClick="activate(this)" class="" id="semi-straight">Semi-Straight</li>
+            <li onClick="activate(this)" class="" id="non-straight">Non-Straight</li>
+        </ul>
+        <ul id="length_probability">
+            <li onClick="activate(this)" class="active" id="probability">Crossing Probability</li>
+            <li onClick="activate(this)" class=""  id="length">Crossing Length</li>
+        </ul>
+        <ul id="dimension">
+            <li onClick="activate(this)" class="active" id="2D">2D</li>
+            <li onClick="activate(this)" class="" id="3D">3D</li>
+        </ul>
+        <ul id="n_d">
+            <li onClick="activate(this)" class="active" id="d">d → ∞</li>
+            <li onClick="activate(this)" class="" id="n">n → ∞</li>
+        </ul>
+    </nav>
+    
+    <img id="graph" src="../data_visualization/crossing_2D/straight_crossing_proba_2D.png">
+
+</body>
+<script src="script.js"></script>
+
+</html>
