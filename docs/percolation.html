@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Crossings</title>
+    <meta name="description" content="Percolation Statistics">
+    <meta name="author" content="Paul Dubois">
+    <link rel="stylesheet" type="text/css" href="graph.css">
+</head>
+
+<body>
+    <div class="oneline">
+        <h1>Percolation Fractals</h1>
+        <h3> - </h3>
+        <h2>Crossings</h2>
+    </div>
+
+    <nav>
+        <ul id="type">
+            <li onClick="activate(this)" class="active" id="dimension">Dimension</li>
+            <li onClick="activate(this)" class="" id="density">Density</li>
+        </ul>
+        <ul id="dimension">
+            <li onClick="activate(this)" class="" id="1D">1D</li>
+            <li onClick="activate(this)" class="active" id="2D">2D</li>
+            <li onClick="activate(this)" class="" id="3D">3D</li>
+            <li onClick="activate(this)" class="" id="4D">4D</li>
+            <li onClick="activate(this)" class="" id="5D">5D</li>
+        </ul>
+    </nav>
+    
+    <img id="graph" alt="main graph" src="https://github.com/pauldubois98/PercolationFractalsStudy/raw/main/data_visualization/percolation/dimension_2D.png">
+
+</body>
+<script src="percolation.js"></script>
+
+</html>
