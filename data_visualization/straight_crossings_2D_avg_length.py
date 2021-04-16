@@ -36,7 +36,7 @@ plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.subplots_adjust(left=0.1, right=0.75, top=0.9, bottom=0.1)
 plt.xlim(0,1)
 plt.ylim(0.9,2.25)
-plt.savefig("data_visualization/straight_crossing_length_2D.png", dpi=300)
+plt.savefig("data_visualization/crossing_2D/straight_crossing_length_2D.png", dpi=300)
 plt.show()
 
 
@@ -56,7 +56,7 @@ plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.subplots_adjust(left=0.1, right=0.75, top=0.9, bottom=0.1)
 plt.xlim(0,1)
 plt.ylim(0.9,2.25)
-plt.savefig("data_visualization/straight_crossing_length_2D_bis.png", dpi=300)
+plt.savefig("data_visualization/crossing_2D/straight_crossing_length_2D_bis.png", dpi=300)
 plt.show()
 
 
@@ -70,6 +70,6 @@ plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.subplots_adjust(left=0.1, right=0.75, top=0.9, bottom=0.1)
 plt.xlim(0,1)
 plt.ylim(0.9,2.25)
-plt.savefig("data_visualization/straight_crossing_length_2D_ter.png", dpi=300)
+plt.savefig("data_visualization/crossing_2D/straight_crossing_length_2D_ter.png", dpi=300)
 plt.show()
 

@@ -14,20 +14,23 @@ def plot_set(n, max_d, r,g,b):
 
 
 
+plt.figure(figsize=[8.4, 4.8])
 plot_set(2, 4, 0,1,1)
 plot_set(3, 2, 1,0,1)
 plot_set(5, 1, 1,1,0)
 plt.title("Length of straight crossing (when existing)")
 plt.xlabel("Percolation probability")
 plt.ylabel("Average length of straight crossings")
-plt.legend()
+plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+plt.subplots_adjust(left=0.1, right=0.75, top=0.9, bottom=0.1)
 plt.xlim(0,1)
 plt.ylim(0.9,2.5)
-plt.savefig("data_visualization/straight_crossing_length_3D.png", dpi=300)
+plt.savefig("data_visualization/crossing_3D/straight_crossing_length_3D.png", dpi=300)
 plt.show()
 
 
 
+plt.figure(figsize=[8.4, 4.8])
 plot_set(2, 1, 0,1,1)
 plot_set(3, 1, 1,0,1)
 plot_set(5, 1, 1,1,0)
@@ -49,5 +52,5 @@ plt.ylabel("Average length of straight crossings")
 plt.legend()
 plt.xlim(0,1)
 plt.ylim(0.9,2.5)
-plt.savefig("data_visualization/straight_crossing_length_3D_bis.png", dpi=300)
+plt.savefig("data_visualization/crossing_3D/straight_crossing_length_3D_bis.png", dpi=300)
 plt.show()
