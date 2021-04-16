@@ -11,7 +11,7 @@ function activate(e){
 }
 
 function updateGraph(){
-    var path = "../data_visualization/"
+    var path = "https://github.com/pauldubois98/PercolationFractalsStudy/raw/main/data_visualization/";
     if(document.getElementById("2D").classList[0]=="active"){
         path += "crossing_2D/"
     }
