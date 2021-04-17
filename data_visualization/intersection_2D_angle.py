@@ -1,6 +1,7 @@
 from intersectionData2D import *
 
 def plot_set(n, d, a_min, a_max, step=2):
+    plt.figure(figsize=[8.4, 4.8])
     for a in range(int(a_min/2)+4, int(a_max/2)+5, step):
         print(n, d, 2*a-8)
         f1 = data["n"]==n #filter
@@ -13,7 +14,8 @@ def plot_set(n, d, a_min, a_max, step=2):
     plt.title("Intersection Length\n"+'n^d='+str(n)+'^'+str(d))
     plt.xlabel("p")
     plt.ylabel("Average Intersection Length")
-    plt.legend()
+    plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+    plt.subplots_adjust(left=0.1, right=0.75, top=0.9, bottom=0.1)
     plt.xlim(0,1)
     #plt.show()
     plt.savefig("data_visualization/intersection_2D/intersection_2D_"+'n^d='+str(n)+'^'+str(d)+".png", dpi=300)
