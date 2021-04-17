@@ -8,7 +8,7 @@ def plot_set(n, max_d, r,g,b):
         f2 = df["d"]==d #filter
         df = df[f2]
         x = df['p']
-        y = df['rel_avg_step']
+        y = df['avg_step']
         plt.plot(x, y, label='n^d='+str(n)+'^'+str(d), c=(1-r*d/max_d, 1-g*d/max_d, 1-b*d/max_d))
 
 
@@ -20,14 +20,14 @@ def plot_set2(ns, d):
         f2 = df["d"]==d #filter
         df = df[f2]
         x = df['p']
-        y = df['rel_avg_step']
+        y = df['avg_step']
         plt.plot(x, y, label='n^d='+str(n)+'^'+str(d))
 
 
 plt.figure(figsize=[8.4, 4.8])
-plot_set(2, 8, 0,1,1)
+#plot_set(2, 8, 0,1,1)
 plot_set(3, 5, 1,0,1)
-plot_set(5, 3, 1,1,0)
+plot_set(5, 2, 1,1,0)
 plt.title("Maximum step distance to the center of the blob")
 plt.xlabel("p")
 plt.ylabel("Average maximum step distance to the center")

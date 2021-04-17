@@ -8,7 +8,7 @@ def plot_set(n, max_d, r,g,b):
         f2 = df["d"]==d #filter
         df = df[f2]
         x = df['p']
-        y = df['rel_avg_vol']
+        y = df['avg_vol']
         plt.plot(x, y, label='n^d='+str(n)+'^'+str(d), c=(1-r*d/max_d, 1-g*d/max_d, 1-b*d/max_d))
 
 
@@ -19,7 +19,7 @@ def plot(n, d, r,g,b):
     f2 = df["d"]==d #filter
     df = df[f2]
     x = df['p']
-    y = df['rel_avg_vol']
+    y = df['avg_vol']
     plt.plot(x, y, label='n^d='+str(n)+'^'+str(d), c=(1-r, 1-g, 1-b))
 
 
@@ -31,7 +31,7 @@ def plot_set2(ns, d):
         f2 = df["d"]==d #filter
         df = df[f2]
         x = df['p']
-        y = df['rel_avg_vol']
+        y = df['avg_vol']
         plt.plot(x, y, label='n^d='+str(n)+'^'+str(d))
 
 
