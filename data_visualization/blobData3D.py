@@ -10,6 +10,6 @@ data["max"] = data["rep"] * (data["side"]**3)
 data["avg_vol"] = data["vol"] / data["rep"] / ((data["n"]**data["d"])**3)
 data["avg_area"] = data["area"] / data["rep"] / ((data["n"]**data["d"])**2)
 data["avg_dist"] = data["dist"] / data["rep"] / (data["n"]**data["d"])
-data["avg_step"] = (data["rep"]+data["step"]) / data["rep"] / (data["n"]**data["d"])
+data["avg_step"] = (data["step"]) / data["rep"] / (data["n"]**data["d"])
 
 
