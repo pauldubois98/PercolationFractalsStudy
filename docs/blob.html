@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Blob</title>
+    <meta name="description" content="Blob Results">
+    <meta name="author" content="Paul Dubois">
+    <link rel="stylesheet" type="text/css" href="graph.css">
+</head>
+
+<body>
+    <div class="oneline">
+        <h1>Percolation Fractals</h1>
+        <h3> - </h3>
+        <h2>Blob</h2>
+    </div>
+
+    <nav>
+        <ul id="dataType">
+            <li onClick="activate(this)" class="active" id="step">Step Distance</li>
+            <li onClick="activate(this)" class="" id="distance">Euclidean Distance</li>
+            <li onClick="activate(this)" class="" id="area">Boundary</li>
+            <li onClick="activate(this)" class="" id="volume">Interior</li>
+        </ul>
+        <ul id="dimension">
+            <li onClick="activate(this)" class="active" id="2D">2D</li>
+            <li onClick="activate(this)" class="" id="3D">3D</li>
+        </ul>
+        <ul id="n_d">
+            <li onClick="activate(this)" class="active" id="d">d → ∞</li>
+            <li onClick="activate(this)" class="" id="n">n → ∞</li>
+        </ul>
+    </nav>
+    
+    <img id="graph" alt="main graph" src="https://github.com/pauldubois98/PercolationFractalsStudy/raw/main/data_visualization/blob_2D/blob_step_2D.png">
+
+</body>
+<script src="blob.js"></script>
+
+</html>
