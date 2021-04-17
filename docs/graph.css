@@ -57,7 +57,7 @@ ul{
     justify-content: space-around;
     flex-flow: row wrap;
     align-items: stretch;
-    width: 30em;
+    width: 33em;
     padding: 0;
     margin: 0;
 }
