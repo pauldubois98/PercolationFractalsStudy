@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Projection</title>
+    <meta name="description" content="Projection Simulations Results">
+    <meta name="author" content="Paul Dubois">
+    <link rel="stylesheet" type="text/css" href="graph.css">
+</head>
+
+<body>
+    <div class="oneline">
+        <h1>Percolation Fractals</h1>
+        <h3> - </h3>
+        <h2>Projection</h2>
+    </div>
+
+    <nav id="menu">
+        <ul id="absolute_relative">
+            <li onClick="activate(this)" class="active" id="absolute">Absolute</li>
+            <li onClick="activate(this)" class="" id="relative">Relative</li>
+        </ul>
+        <ul id="n^2">
+            <li onClick="activate(this)" class="n^d active" id="2^1">2^1</li>
+            <li onClick="activate(this)" class="n^d" id="2^2">2^2</li>
+            <li onClick="activate(this)" class="n^d" id="2^3">2^3</li>
+            <li onClick="activate(this)" class="n^d" id="2^4">2^4</li>
+            <li onClick="activate(this)" class="n^d" id="2^5">2^5</li>
+            <li onClick="activate(this)" class="n^d" id="2^6">2^6</li>
+            <li onClick="activate(this)" class="n^d" id="2^7">2^7</li>
+            <li onClick="activate(this)" class="n^d" id="2^8">2^8</li>
+        </ul>
+        <ul id="n^3_5">
+            <li onClick="activate(this)" class="n^d" id="3^1">3^1</li>
+            <li onClick="activate(this)" class="n^d" id="3^2">3^2</li>
+            <li onClick="activate(this)" class="n^d" id="3^3">3^3</li>
+            <li onClick="activate(this)" class="n^d" id="3^4">3^4</li>
+            <li onClick="activate(this)" class="n^d" id="3^5">3^5</li>
+            
+            <li onClick="activate(this)" class="n^d" id="5^1">5^1</li>
+            <li onClick="activate(this)" class="n^d" id="5^2">5^2</li>
+            <li onClick="activate(this)" class="n^d" id="5^3">5^3</li>
+        </ul>
+        <ul id="n^7_11_13_17">
+            <li onClick="activate(this)" class="n^d" id="7^1">7^1</li>
+            <li onClick="activate(this)" class="n^d" id="7^2">7^2</li>
+            <li onClick="activate(this)" class="n^d" id="11^1">11^1</li>
+            <li onClick="activate(this)" class="n^d" id="11^2">11^2</li>
+            <li onClick="activate(this)" class="n^d" id="13^1">13^1</li>
+            <li onClick="activate(this)" class="n^d" id="13^2">13^2</li>
+            <li onClick="activate(this)" class="n^d" id="17^1">17^1</li>
+            <li onClick="activate(this)" class="n^d" id="17^2">17^2</li>
+        </ul>
+        <ul id="d_1">
+            <li onClick="activate(this)" class="n^d" id="20^1">20^1</li>
+            <li onClick="activate(this)" class="n^d" id="25^1">25^1</li>
+            <li onClick="activate(this)" class="n^d" id="50^1">50^1</li>
+            <li onClick="activate(this)" class="n^d" id="75^1">75^1</li>
+            <li onClick="activate(this)" class="n^d" id="100^1">100^1</li>
+        </ul>
+        <ul id="d_1_bis">
+            <li onClick="activate(this)" class="n^d" id="125^1">125^1</li>
+            <li onClick="activate(this)" class="n^d" id="150^1">150^1</li>
+            <li onClick="activate(this)" class="n^d" id="175^1">175^1</li>
+            <li onClick="activate(this)" class="n^d" id="200^1">200^1</li>
+        </ul>
+    </nav>
+    
+    <img id="graph" alt="main graph" src="https://github.com/pauldubois98/PercolationFractalsStudy/raw/main/data_visualization/projection_2D/projection_2D_n^d=2^1.png">
+
+</body>
+<script src="projection.js"></script>
+
+</html>
