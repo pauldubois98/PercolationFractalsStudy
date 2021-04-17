@@ -5,7 +5,7 @@ for D in range(1,6):
     plt.figure(figsize=[8.4, 4.8])
     def plot_dimension(n, c):
         p = np.linspace(0,1,250)
-        dim = np.maximum(D*(1 + (np.log(p)/np.log(n))), 0*p)
+        dim = np.maximum(D + (np.log(p)/np.log(n)), 0*p)
         
         plt.plot(p, dim, label='n^d='+str(n)+'^$\infty$', c='C'+str(c))
 
