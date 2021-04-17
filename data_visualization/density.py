@@ -15,7 +15,7 @@ for D in range(1,6):
 
     plt.title("Density of the percolation")
     plt.xlabel("p")
-    plt.ylabel("Density dimension")
+    plt.ylabel("Expected density")
     plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
     plt.subplots_adjust(left=0.1, right=0.75, top=0.9, bottom=0.1)
     plt.xlim(0,1)
