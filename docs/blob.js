@@ -36,6 +36,9 @@ function updateGraph(){
         if(document.getElementById("d").classList[0]=="active"){
             path += ""
         }
+        if(document.getElementById("nd").classList[0]=="active"){
+            path += "_bis"
+        }
         if(document.getElementById("n").classList[0]=="active"){
             path += "_ter"
         }
