@@ -8,7 +8,7 @@ def plot_set(n, max_d, r,g,b):
         f2 = df["d"]==d #filter
         df = df[f2]
         x = df['p']
-        y = df['avg_area']
+        y = df['avg_boundary']
         plt.plot(x, y, label='n^d='+str(n)+'^'+str(d), c=(1-r*d/max_d, 1-g*d/max_d, 1-b*d/max_d))
 
 
@@ -20,7 +20,7 @@ def plot_set2(ns, d):
         f2 = df["d"]==d #filter
         df = df[f2]
         x = df['p']
-        y = df['avg_area']
+        y = df['avg_boundary']
         plt.plot(x, y, label='n^d='+str(n)+'^'+str(d))
 
 
@@ -29,12 +29,12 @@ plot_set(3, 5, 1,0,1)
 plot_set(5, 2, 1,1,0)
 plt.title("Length of the boundary of the blob")
 plt.xlabel("p")
-plt.ylabel("Average length of the blob boundary")
+plt.ylabel("Average blob boundary length")
 plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.subplots_adjust(left=0.1, right=0.75, top=0.9, bottom=0.1)
 plt.xlim(0,1)
 # plt.ylim(0,120)
-plt.savefig("data_visualization/blob_2D/blob_area_2D.png", dpi=300)
+plt.savefig("data_visualization/blob_2D/blob_boundary_2D.png", dpi=300)
 plt.show()
 
 
@@ -48,12 +48,12 @@ plot_set(13,2, 0,0,1)
 plot_set(17,2, 1,1,1)
 plt.title("Length of the boundary of the blob")
 plt.xlabel("p")
-plt.ylabel("Average length of the blob boundary")
+plt.ylabel("Average blob boundary length")
 plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.subplots_adjust(left=0.1, right=0.75, top=0.9, bottom=0.1)
 plt.xlim(0,1)
 # plt.ylim(0,120)
-plt.savefig("data_visualization/blob_2D/blob_area_2D_bis.png", dpi=300)
+plt.savefig("data_visualization/blob_2D/blob_boundary_2D_bis.png", dpi=300)
 plt.show()
 
 
@@ -62,10 +62,10 @@ plt.figure(figsize=[8.4, 4.8])
 plot_set2( [3, 5, 7, 11, 13, 17, 25, 51, 75, 101, 125, 151, 175, 201], 1)
 plt.title("Length of the boundary of the blob")
 plt.xlabel("p")
-plt.ylabel("Average length of the blob boundary")
+plt.ylabel("Average blob boundary length")
 plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.subplots_adjust(left=0.1, right=0.75, top=0.9, bottom=0.1)
 plt.xlim(0,1)
 # plt.ylim(0,120)
-plt.savefig("data_visualization/blob_2D/blob_area_2D_ter.png", dpi=300)
+plt.savefig("data_visualization/blob_2D/blob_boundary_2D_ter.png", dpi=300)
 plt.show()

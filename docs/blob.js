@@ -25,11 +25,11 @@ function updateGraph(){
     if(document.getElementById("distance").classList[0]=="active"){
         path += "dist_"
     }
-    if(document.getElementById("area").classList[0]=="active"){
-        path += "area_"
+    if(document.getElementById("boundary").classList[0]=="active"){
+        path += "boundary_"
     }
-    if(document.getElementById("volume").classList[0]=="active"){
-        path += "vol_"
+    if(document.getElementById("interior").classList[0]=="active"){
+        path += "interior_"
     }
     if(document.getElementById("2D").classList[0]=="active"){
         path += "2D"
