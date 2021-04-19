@@ -66,7 +66,7 @@ in a depth d percolation of an n*n grid with probability p, using rep experiment
 
 # Examples
 ```julia-repl
-julia> julia> straightCrossingData3D(2,0.50,3, 1000)
+julia> straightCrossingData3D(2,0.50,3, 1000)
 (64, 8, 64909)
 julia> straightCrossingData3D(2,0.60,3, 1000)
 (384, 48, 109791)
@@ -105,7 +105,7 @@ rep = 50000
 file_name = "crossings_straight_3D_"*string(rep)*".csv"
 entitleFile(file_name, "rep,n,d,p,nc,lc,sq")
 
-saveStraightCrossingSmartData3D(2, 1, rep, file_name)
+# saveStraightCrossingSmartData3D(2, 1, rep, file_name)
 # saveStraightCrossingSmartData3D(2, 2, rep, file_name)
 # saveStraightCrossingSmartData3D(2, 3, rep, file_name)
 # saveStraightCrossingSmartData3D(2, 4, rep, file_name)

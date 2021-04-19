@@ -43,11 +43,11 @@ in a depth d percolation of an n*n grid with probability p, using rep experiment
 # Examples
 ```julia-repl
 julia> straightCrossingData(2,0.99,8, 100)
-(76, 6059997)
+(19968, 78, 6018902)
 julia> straightCrossingData(2,0.98,8, 100)
-(1, 5621413)
+(256, 1, 5580265)
 julia> straightCrossingData(2,0.97,8, 100)
-(0, 5108937)
+(0, 0, 5158902)
 ```
 """
 function straightCrossingData(n::Integer,p::Real,d::Integer,rep::Integer)::Tuple{Int64,Int64,Int64}
@@ -121,5 +121,5 @@ entitleFile(file_name, "rep,n,d,p,nc,lc,sq")
 # saveStraightCrossingSmartData(100, 1, rep, file_name)
 # saveStraightCrossingSmartData(125, 1, rep, file_name)
 # saveStraightCrossingSmartData(150, 1, rep, file_name)
-saveStraightCrossingSmartData(175, 1, rep, file_name)
-saveStraightCrossingSmartData(200, 1, rep, file_name)
+# saveStraightCrossingSmartData(175, 1, rep, file_name)
+# saveStraightCrossingSmartData(200, 1, rep, file_name)
