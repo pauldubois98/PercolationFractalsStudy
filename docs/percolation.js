@@ -19,6 +19,9 @@ function updateGraph(){
     if(document.getElementById("density").classList[0]=="active"){
         path += "density"
     }
+    if(document.getElementById("complement_density").classList[0]=="active"){
+        path += "complement_density"
+    }
 
     if(document.getElementById("1D").classList[0]=="active"){
         path += "_1D"
