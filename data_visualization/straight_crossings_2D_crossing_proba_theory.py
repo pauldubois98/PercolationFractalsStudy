@@ -3,6 +3,7 @@ import numpy as np
 
 
 def proba_th(n,d,p):
+    return 1-((1-(x**n))**n)
     return (n**d)*(p**((n**(d+1)-n)/(n-1)))
 
 def data(n,d):
@@ -29,9 +30,10 @@ def plot_set2(ns, d):
 
 
 plt.figure(figsize=[8.4, 4.8])
-plot_set(2, 2, 0,1,1)
-plot_set(3, 2, 1,0,1)
-plot_set(5, 2, 1,1,0)
+# plot_set(2, 8, 0,1,1)
+# plot_set(3, 4, 1,0,1)
+# plot_set(5, 2, 1,1,0)
+plot_set2([2,3,5,7,10,15,20,50,100,200],1)
 plt.title("Theoretical Straight Crossing Probability")
 plt.xlabel("p")
 plt.ylabel("Straight Crossing Probability")

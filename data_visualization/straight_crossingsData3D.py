@@ -6,7 +6,7 @@ data = pd.read_csv('data/crossings_straight_3D_50000.csv')
 
 data = data.sort_values(["p", "d", "n"])
 data["cp"] = data["nc"] / data["rep"]
-data["max"] = data["rep"] * ((data["n"]**(data["d"]))**2)
+data["max"] = data["rep"] * ((data["n"]**(data["d"]))**3)
 data["density"] = data["sq"] / data['max']
 data["dim"] = np.log(data["sq"]) / np.log(data["max"])
 data["al"] = data["lc"] / data["nc"]
