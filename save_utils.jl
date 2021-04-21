@@ -50,6 +50,19 @@ function smartSaveCrossingData(crossingDataFunc::Function, n::Integer, d::Intege
     close(f)
 end
 
-
+function smartSaveCrossingData(crossingDataFunc::Function, n::Integer, d::Integer, rep::Integer, fileName::String)
+    println("n=",n, " d=",d, " rep=",rep)
+    f = open(fileName, "a")
+    p = 0
+    while p<=1
+        lc,nc, sq = crossingDataFunc(n,p,d, rep)
+        println(f, string(rep)*','*string(n)*','*string(d)*','*string(p)*','*string(nc)*','*string(lc)*','*string(sq))
+        p += 0.01
+    end
+    p=1
+    lc,nc, sq = crossingDataFunc(n,p,d, rep)
+    println(f, string(rep)*','*string(n)*','*string(d)*','*string(p)*','*string(nc)*','*string(lc)*','*string(sq))
+    close(f)
+end
 
 
