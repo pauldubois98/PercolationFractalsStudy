@@ -75,7 +75,7 @@ function saveStraightComplementCrossingSmartData2D(n::Integer, d::Integer, rep::
 end
 
 rep = 50000
-file_name = "complement_crossing_straight_2D_"*string(rep)*".csv"
+file_name = "complement_crossings_straight_2D_"*string(rep)*".csv"
 entitleFile(file_name, "rep,n,d,p,nc,lc,sq")
 
 
